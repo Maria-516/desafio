@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"></link>
-    <title>Inicio - Gabriela Wagner</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  
+  
+  
+  <link rel="stylesheet" href="style.css"></link>
+  <title>Inicio - Gabriela Wagner</title>
 </head>
 <body>
  <!-- header-->
@@ -31,7 +36,7 @@
  <main id="contenido">   
   <!-- titulo bienvenida>-->
   <section class="titulosh1">
-   <h1>Bienvenidas a mi Atelier</h1>
+   <h1 class="h1">Bienvenidas a mi Atelier</h1>
   </section> 
   <section class="texto">
    <p> <STRONG>"La ropa no significa nada hasta que alguien vive en ella." Marc Jacobs.</STRONG></p>
@@ -45,32 +50,40 @@
           Si te gustaria conocer más abajo están mis datos de contacto para solicitar una cita... <b>Te espero!</b>
    </p>     
   </section>
-  <section class="imagen_parrafo"></section>
+  <section  class="imagen_parrafo" >
+    
+    <img class="rounded-circle" src="./multimedia/atelier2.jpg" alt="">
+
+  </section>
+
+
+ 
+
   <!--   grid imagenes      -->
   <div class="menu_img" >
-   <h2>Ahora te invito a recorrer mi página y conocer mis trabajos . . .</h2>      
+   <h2 class="h2">Ahora te invito a recorrer mi página y conocer mis trabajos . . .</h2>      
    <div class="grid-container"> 
     <article  class="pos_image">
      <a class="loc-titulo" href="pages/novias.html">Novias</a>
-     <div class="loc-imagen"><a href="pages/novias.html"> <img  width="325" height="450"  src="./multimedia/novia2.jpg" alt="novias"></a>
+     <div class="loc-imagen"><a href="pages/novias.html"> <img  width="325" height="450" class="rounded"  src="./multimedia/novia2.jpg" alt="novias"></a>
 		 </div>
     </article >
 	
     <article  class="pos_image">
      <a class="loc-titulo" href="pages/madrinas.html">Madrinas</a>
-     <div class="loc-imagen"> <a href="pages/madrinas.html"><img  width="325" height="450"  src="./multimedia/madrina2.jpg" alt="madrinas"></a>
+     <div class="loc-imagen"> <a href="pages/madrinas.html"><img  width="325" height="450"  class="rounded" src="./multimedia/madrina2.jpg" alt="madrinas"></a>
      </div>
     </article >
      
     <article  class="pos_image">
      <a class="loc-titulo" href="pages/quince.html">Quince</a>
-     <div class="loc-imagen"><a  href="pages/quince.html"><img width="325" height="450" src="./multimedia/quince-2.jpg" alt="quince"></a>
+     <div class="loc-imagen"><a  href="pages/quince.html"><img width="325" height="450" class="rounded" src="./multimedia/quince-2.jpg" alt="quince"></a>
      </div>
     </article >
   	
     <article  class="pos_image">
      <a class="loc-titulo" href="pages/vestidos.html">Fiesta</a>
-     <div class="loc-imagen"><a  href="pages/vestidos.html"><img  width="325" height="450"  src="./multimedia/fiesta2.jpg" alt="fiesta"></a>
+     <div class="loc-imagen"><a  href="pages/vestidos.html"><img  width="325" height="450"  class="rounded" src="./multimedia/fiesta2.jpg" alt="fiesta"></a>
      </div>
     </article >   
    </div><!-- end grid container -->     
@@ -78,6 +91,8 @@
   <hr/>     
  </main>
 
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
  <!-- footer-->
  <footer class="pie">
