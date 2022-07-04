@@ -155,6 +155,36 @@ div.contenido-page:hover {
    background-color: rgb(234, 190, 59);
   }
 
+  .contenido_contacto
+  { background-color:rgb(233, 235, 236); 
+
+    color:  #352d24;   
+    text-align: left;
+    font-family: Open Sans;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+/* formulario */
+.form-box {
+    max-width: 500px;
+    margin: auto;
+    padding: 50px;
+    background: #f5ca91;
+    border: 10px solid #f2f2f2;
+  }
+ .btn-primary {background: #c0bebf;}
+ .form-box p {
+    text-align: center;
+  }
+  
+  input, textarea {
+    width: 100%;
+  }
+   
+
+
+
 
 
 /* footer */
