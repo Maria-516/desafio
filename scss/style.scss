@@ -1,11 +1,12 @@
+@import 'base/footer';
 *{margin:0; 
     padding:0;
   }
   
-  li{list-style: none;}
-   
-  hr
-  { height: 2px;
+ li{list-style: none;}
+ 
+
+  hr{ height: 2px;
     border-color:rgba(223, 222, 220, 0.842) ;
     background-color: rgb(234, 190, 59);
    }
@@ -114,36 +115,4 @@
     
   }
 }
-   .pie
-   {   background: #E2D2C3;    
-       padding-left: 1em; 
-       .link
-       {   text-decoration: none;
-           color: #4e3415; 
-           text-decoration: none;
-           font-weight: 600;
-           letter-spacing: 1px;
-           font-size: 13px;
-           text-transform: uppercase;	
-       }
-       .datoscontacto
-        { display: flex;   
-          justify-content: flex-start;  
-          img
-          { width: 30px;  
-            padding:  5px;   
-            }  
-          p {  padding:  5px;   } 
-        }
-        .sociales{
-         display: flex;   
-         justify-content: center; 
-         align-items: center;
-         img { width: 30px;  
-               padding: 2px;   
-               
-            }
-        }
-    }    
-
-
+ 

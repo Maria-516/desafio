@@ -1,3 +1,37 @@
+.pie {
+  background: #E2D2C3;
+  padding-left: 1em;
+}
+.pie .link {
+  text-decoration: none;
+  color: #4e3415;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.pie .datoscontacto {
+  display: flex;
+  justify-content: flex-start;
+}
+.pie .datoscontacto img {
+  width: 30px;
+  padding: 5px;
+}
+.pie .datoscontacto p {
+  padding: 5px;
+}
+.pie .sociales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pie .sociales img {
+  width: 30px;
+  padding: 2px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -112,40 +146,6 @@ hr {
 }
 #contenido .grid-container .pos_image:hover .loc-titulo {
   opacity: 1;
-}
-
-.pie {
-  background: #E2D2C3;
-  padding-left: 1em;
-}
-.pie .link {
-  text-decoration: none;
-  color: #4e3415;
-  text-decoration: none;
-  font-weight: 600;
-  letter-spacing: 1px;
-  font-size: 13px;
-  text-transform: uppercase;
-}
-.pie .datoscontacto {
-  display: flex;
-  justify-content: flex-start;
-}
-.pie .datoscontacto img {
-  width: 30px;
-  padding: 5px;
-}
-.pie .datoscontacto p {
-  padding: 5px;
-}
-.pie .sociales {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.pie .sociales img {
-  width: 30px;
-  padding: 2px;
 }
 
 /*# sourceMappingURL=style.css.map */
