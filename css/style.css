@@ -77,23 +77,23 @@ hr {
   background-image: url("./multimedia/fondos/5-.jpg");
 }
 #contenido .titulosh1 {
-  font-size: 30px;
-  color: #4e3415;
-  text-align: center;
   font-family: Open Sans;
   font-weight: 400;
   font-style: normal;
+  font-size: 30px;
+  color: #4e3415;
+  text-align: center;
   top: 1em;
 }
 #contenido .titulosh2 {
   display: flex;
   justify-content: center;
-  align-items: space-between;
-  color: #4e3415;
-  text-align: left;
   font-family: Open Sans;
   font-weight: 400;
   font-style: normal;
+  align-items: space-between;
+  color: #4e3415;
+  text-align: left;
   padding: 1em;
 }
 #contenido .texto {
@@ -136,8 +136,8 @@ hr {
   text-decoration: none;
   /* centrado*/
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   opacity: 0;
   transition: opacity 0.5s;
 }
@@ -146,6 +146,58 @@ hr {
 }
 #contenido .grid-container .pos_image:hover .loc-titulo {
   opacity: 1;
+}
+
+div.contenido-page {
+  background-color: rgba(228, 222, 222, 0.9176470588);
+  transition: all 0.3s ease;
+}
+div.contenido-page .texto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-style: italic;
+}
+div.contenido-page .texto p {
+  margin: 0;
+  width: 90%;
+  text-align: center;
+  padding: 1em;
+}
+
+div.contenido-page:hover {
+  background: #e673f5;
+}
+
+.contenido_contacto {
+  background-color: rgb(233, 235, 236);
+  color: #352d24;
+  text-align: left;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* formulario */
+.form-box {
+  max-width: 500px;
+  margin: auto;
+  padding: 50px;
+  background: #f5ca91;
+  border: 10px solid #f2f2f2;
+}
+
+.btn-primary {
+  background: #c0bebf;
+}
+
+.form-box p {
+  text-align: center;
+}
+
+input, textarea {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
