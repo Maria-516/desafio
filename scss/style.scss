@@ -17,14 +17,16 @@
   
 li{list-style: none;}
  
+body{
+ 
+  background-image:url('../multimedia/fondos/5-.jpg');
+}
 
-hr{ height: 2px;
-    border-color:rgba(223, 222, 220, 0.842) ;
-    background-color: rgb(234, 190, 59);
-   }
+
 .cabecera{background:#E2D2C3;  
           position: sticky;
-          top: 0;      
+          top: 0; left: 0; right: 0;
+          border-bottom: 1px #4e3415 solid;
           .logo {@include play (end);            
             flex-wrap: wrap;      
           }
@@ -39,14 +41,22 @@ hr{ height: 2px;
                  font-size: 15px;
                  text-transform: uppercase;
                  text-align: center;
+                 background-image: linear-gradient(currentColor, currentColor);
+                 background-position: 0% 100%;
+                 background-repeat: no-repeat;
+                 background-size: 0% 2px;
+                 transition: background-size .3s;
+
+                 &:hover, &:focus {
+                  background-size: 100% 2px;}
+
+
             }
           }
         }
 
-  
 
-#contenido{background-color:rgb(233, 235, 236); 
-    background-image:url('./multimedia/fondos/5-.jpg') ;
+   
 
     .titulosh1 
     { @include fuentes; 
@@ -74,7 +84,8 @@ hr{ height: 2px;
       text-align: center;
       padding: 1em; }
     }  
-	
+    #contenido{background-color:#f8d3e7;
+
     .imagen_parrafo{     
       @include play (center);        
       align-items: center;    
@@ -137,8 +148,23 @@ div.contenido-page
  
 }
 div.contenido-page:hover {
-        background: #e673f5;
+        background: #f0a9cc;
     } 
+
+.flex-center{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+#fondo{
+      width: 700px;
+      height: 620px;
+      background-image: url(../multimedia/novia/boda2.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center; }
+  }
+
 
 .contenido_contacto
   { background-color:rgb(233, 235, 236); 
@@ -146,6 +172,12 @@ div.contenido-page:hover {
     text-align: left;
     @include fuentes; 
   }
+
+
+
+
+
+
 
 /* formulario */
 .form-box {
@@ -165,4 +197,40 @@ div.contenido-page:hover {
     width: 100%;
   }
    
+/*footer */
+  .pie {
+    background: #E2D2C3;
+    padding-left: 1em;
+    width: 100%;
+    padding: 10px;
 
+  .link {
+    @include play (center);   
+    text-decoration: none;
+    color:  $color_titulos;   
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-align: center; 
+  }
+   .datoscontacto {
+    @include play (space-evenly);
+  }
+  .datoscontacto img {
+    width: 30px;
+    padding: 5px;
+  }
+  .datoscontacto p {
+    padding: 5px;
+  }
+  .sociales {
+    @include play (center); 
+    align-items: center;
+  }
+   .sociales img {
+    width: 30px;
+    padding: 2px;
+  }
+}
