@@ -11,8 +11,16 @@
   font-weight: 400;
   font-style: normal;
  } 
+
+
+
+ @mixin med {
+  width:100%;
+  height:100%;
+ }
  *{margin:0; 
   padding:0;
+  box-sizing: border-box;
   }
   
 li{list-style: none;}
@@ -23,9 +31,11 @@ body{
 }
 
 
+
 .cabecera{background:#E2D2C3;  
-          position: sticky;
+          position: sticky;          
           top: 0; left: 0; right: 0;
+          z-index:1;
           border-bottom: 1px #4e3415 solid;
           .logo {@include play (end);            
             flex-wrap: wrap;      
@@ -64,13 +74,13 @@ body{
       color: $color_titulos; 
       text-align: center;
       top: 1em;
+      text-shadow: 7px 4px 5px rgba(245, 188, 113, 0.726);
     }
     .titulosh2
     {@include play (center); 
 	   @include fuentes;
      align-items: space-between;
-     color:  $color_titulos;   
-     text-align: left;    
+     color:  $color_titulos;          
      padding: 1em;
     }
     .texto
@@ -78,12 +88,15 @@ body{
      align-items: center;
      font-size:20px;   
      font-style:italic; 
-	
+	  
      p {  margin: 0;
       width: 90%;
       text-align: center;
       padding: 1em; }
+
+      
     }  
+    .p1{font-weight: bold;}
     #contenido{background-color:#f8d3e7;
 
     .imagen_parrafo{     
@@ -130,54 +143,181 @@ body{
     
   }
 }
- 
-div.contenido-page
-{   background-color: 	#e4dedeea;
+
+ /* Atelier */
+.contenido-page
+{   background-color: #e4dedeea;
     transition: all 0.3s ease;
+    padding-bottom: 10px;
+    
     .texto
     {@include play (center);   
      align-items: center;
      font-size:20px;   
-     font-style:italic; 
-	
+     font-style:italic; 	
      p {  margin: 0;
       width: 90%;
       text-align: center;
       padding: 1em; }
     }  
- 
-}
-div.contenido-page:hover {
-        background: #f0a9cc;
+    .titulosh3 
+    { @include fuentes; 
+      font-size: 10px;
+      color: $color_titulos; 
+      text-align: center;
+      top: 1em;
     } 
-
-.flex-center{
-      display: flex;
-      justify-content: center;
+    .contenido-carrusel{
+      @include play (center); 
       align-items: center;
+      margin-bottom: 50px;
+    }
+   
+    .imgcentro{
+      margin-bottom: 20px;
+      text-align: center;
+    }
+ 
+    .imagen{width:100%;} 
+    .imagen img {width:325px; height:280px;}
+    .galeria{ width:100%;
+      margin: 50px;
+      margin-top:10px;
+      margin-bottom: 10x;
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      grid-template-rows:250;
+      grid-gap:30px;
+    }  
+ 
+    @media screen and (max-width:800px){
+    .galeria{
+      width:95%;
+      grid-template-columns:repeat(2, 1fr);
+      grid-gap:10px;
+      grid-template-rows:200px;}
+    }
+ 
+     @media screen and (max-width:500px){
+     .galeria{
+       width:90%;
+      grid-template-columns:repeat(1, 1fr);
+    } 
   
+  }
+}
+
+.contenido-page:hover {
+        background: #f8cdb1;
+    }
+
+ 
+/*novias -  madrinas */
+.flex-center{
+     @include play (center); 
+     align-items: center;
+
 #fondo{
-      width: 700px;
-      height: 620px;
-      background-image: url(../multimedia/novia/boda2.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center; }
+  width: 600px;
+  height: 520px;
+  background-image: url(../multimedia/novia/boda1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+   }
   }
 
+#fondo2{
+  width: 600px;
+  height: 520px;
+  background-image: url(../multimedia/quince/img1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; 
+   }
+ 
+.contenido-img{
+  width:100%;
+  max-width: 1100px;
+  margin:auto;
+  margin-top:10px;
+  margin-bottom: 60px;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows:250;
+  grid-gap:20px;
+}
+.contenido-img .box-img figure{
+  @include med;
+}
+.contenido-img .box-img img{
+  @include med;
+  object-fit:cover;
+}
+@media screen and (max-width:800px){
+ .contenido-img{
+  width:95%;
+  grid-template-columns:repeat(2, 1fr);
+  grid-gap:10px;
+  grid-template-rows:200px;}
+}
 
+@media screen and (max-width:500px){
+  .contenido-img{
+   width:90%;
+   grid-template-columns:repeat(1, 1fr);
+  }
+  .contenido-img .box-img img{
+   height:200px ;
+   }
+ }
+
+ /* quince  */
+  
+.contenido-img2{
+  width:100%;
+  max-width: 1100px;
+  margin:auto;
+  margin-top:10px;
+  margin-bottom: 60px;
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows:250;
+  grid-gap:25px;
+}
+.contenido-img2 .box-img2 figure{
+  @include med;
+}
+.contenido-img2 .box-img2 img{
+  width:90%;
+  height:90%;
+  object-fit:cover;
+}
+@media screen and (max-width:800px){
+  .contenido-img2{
+   width:95%;
+   grid-template-columns:repeat(2, 1fr);
+   grid-gap:10px;
+   grid-template-rows:200px;}
+ }
+ 
+ @media screen and (max-width:500px){
+   .contenido-img2{
+    width:90%;
+    grid-template-columns:repeat(1, 1fr);
+   }
+   .contenido-img2 .box-img2 img{
+    height:200px ;
+    }
+  }
+
+/*contacto */
 .contenido_contacto
   { background-color:rgb(233, 235, 236); 
     color:  #352d24;   
     text-align: left;
     @include fuentes; 
   }
-
-
-
-
-
-
 
 /* formulario */
 .form-box {

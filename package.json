@@ -9,11 +9,17 @@
     "type": "git",
     "url": "git+https://github.com/Maria-516/desafio.git"
   },
-  "author": "",
+  "author": "Carmen Engel",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Maria-516/desafio/issues"
   },
   "homepage": "https://github.com/Maria-516/desafio#readme",
-  "description": ""
+  "description": "Página Web del Atelier de Gabriela Wagner dedicado al diseño y confección de vestidos a medida de novias, madrinas, quincieñeras y todo tipo de eventos",
+  "keywords": [
+    "gabriela",
+    "wagner",
+    "diseño",
+    "vestidos"
+  ]
 }
